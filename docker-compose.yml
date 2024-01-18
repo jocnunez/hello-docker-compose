@@ -1,0 +1,15 @@
+#docker compose up
+services:
+  web: #internal DNS* name
+    build: ./web
+    ports:
+      - "8080:80"
+      - "8081:80"
+
+  api:
+    build: ./api 
+    ports:
+      - "8888:8888"
+
+  #db:
+    #image: mongo
