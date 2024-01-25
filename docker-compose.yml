@@ -1,4 +1,4 @@
-#docker compose up
+# docker compose up
 services:
   web: #internal DNS* name
     build: ./web
